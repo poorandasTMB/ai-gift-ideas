@@ -114,18 +114,20 @@ footer {
 
 .footer_navitem.login_btn a {
     display: block;
-    padding: 8px 24px;
+    padding: 11px 24px;
     border-radius: 8px;
     background: #FFF;
     text-align: center;
-    max-width: 170px;
+    min-width: 170px;
     width: 100%;
     margin-bottom: 8px;
+    color: #21201F;
 
 }
 
 .footer_navitem.login_btn a:last-child {
     background: #50BCD9;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -220,7 +222,7 @@ footer {
 
 @media only screen and (max-width: 575px) {
     .footer_navlist {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
         gap: 50px;
     }
 }
