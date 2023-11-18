@@ -1,0 +1,15 @@
+.sec_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    .sec_heading {
+        color: #101A34;
+        font-size: 38px;
+        font-weight: 600;
+        justify-content: center;
+        margin: 35px 0;
+    }
+}

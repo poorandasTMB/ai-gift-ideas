@@ -1,0 +1,142 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #F9F9F9;
+  color: white;
+  padding: 26px 135px;
+}
+.toggle{
+  display: none;
+}
+.center-content {
+  display: flex;
+  align-items: center;
+  transition: .3s;
+}
+
+.ai_btn {
+  padding: 8px;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #50BCD9 -1.32%, #F14DFF 111.06%);
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  span {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+}
+
+header .login_btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  button {
+    padding: 11.2px 24px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  button:nth-child(2) {
+    border-radius: 8px;
+    background:  #101A34;
+    color: #fff;
+  }
+}
+
+header nav a {
+  color: #101A34;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+.login_btn.mobile{
+  display: none;
+}
+
+// Responsive Css Code
+@media only screen and (max-width: 1440px) {
+  .header{
+    padding: 26px 80px;
+  }
+  header nav{
+    gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header{
+    padding: 26px 20px;
+  }
+  header nav{
+    gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .toggle{
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .login_btn.mobile{
+    display: block;
+  }
+  .login_btn.deckstop button:not(:last-child){
+    display: none;
+  }
+  .center-content.active{
+    right: 0%;
+  }
+  .center-content{
+    position: fixed;
+    top: 90px;
+    z-index: 99;
+    right: -100%;
+    background-color: #F9F9F9;
+    padding: 30px;
+    align-items: start;
+  }
+  header nav{
+    flex-direction: column;
+  }
+  header nav a {
+    width: 100%;
+  }
+}
